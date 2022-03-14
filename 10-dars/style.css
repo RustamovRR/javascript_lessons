@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  background-color: black;
+  margin-left: 20vw;
+  color: white;
+}
+
+main {
+  margin-top: 30vh;
+}
+
+main input {
+  width: 300px;
+  height: 50px;
+  font-size: 26px;
+}
+
+main button {
+  height: 55px;
+  width: 100px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+ol {
+  color: white;
+  font-size: 26px;
+  font-family: monospace;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.unchecked {
+    text-decoration: none;
+}

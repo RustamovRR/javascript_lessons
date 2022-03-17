@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  background-color: black;
+  margin-left: 20vw;
+  color: white;
+}
+
+main {
+  width: 800px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.cars {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: 0.5s;
+  position: absolute;
+  display: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+}
+
+.prev_button {
+  top: 220px;
+  left: 10px;
+}
+
+.next_button {
+  top: 220px;
+  right: 10px;
+}
+
+.cars:first-child {
+  display: block;
+}
+
+.dots {
+  position: absolute; 
+  display: flex;
+  left: 40%;
+  top: 450px;
+}
+
+.dots span {
+  width: 20px;
+  height: 4px;
+  background-color: grey;
+  margin-left: 10px;
+}
+
+.active_dot {
+  background-color: white !important;
+}

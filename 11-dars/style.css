@@ -1,66 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
-  background-color: black;
-  margin-left: 20vw;
-  color: white;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main {
-  width: 800px;
-  margin-top: 100px;
-  position: relative;
+.calculator {
+  width: 25%;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: right;
+  box-shadow: 7px 7px 7px 7px rgb(0, 0, 0, 0.5);
 }
 
-.cars {
+.display {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
-  transition: 0.5s;
-  position: absolute;
-  display: none;
+  height: 20vh;
+  background: rgb(46, 44, 44);
+  color: rgb(243, 240, 236);
+}
+.buttons_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1000;
+  border: none;
+  background-color: white;
+  padding: 1.6rem;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  font-weight: bold;
 }
 
-.prev_button {
-  top: 220px;
-  left: 10px;
+#output {
+  font-size: 28px;
+  padding: 25px;
 }
 
-.next_button {
-  top: 220px;
-  right: 10px;
+#result {
+  font-size: 18px;
+  padding: 25px;
 }
 
-.cars:first-child {
-  display: block;
+@keyframes big {
+  0% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 30px;
+  }
 }
 
-.dots {
-  position: absolute; 
-  display: flex;
-  left: 40%;
-  top: 450px;
-}
-
-.dots span {
-  width: 20px;
-  height: 4px;
-  background-color: grey;
-  margin-left: 10px;
-}
-
-.active_dot {
-  background-color: white !important;
+@keyframes big {
+  0% {
+    font-size: 28px;
+  }
+  100% {
+    font-size: 18px;
+  }
 }
